@@ -1,0 +1,15 @@
+{% extends 'apptemplates/loginBasic.html' %}
+{% block title %} Login - EcoWaste Management System {% endblock title %}
+{% block content %}
+
+<section class="hero">
+    <h2 class="heading">Login Type</h2>
+    <form action="" method="POST">
+            {% csrf_token %}
+            {{forms.as_p}}
+            <button type="submit">Submit</button>
+    </form>
+</section>
+
+
+{% endblock content %}
